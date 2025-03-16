@@ -1,5 +1,6 @@
 {
     "name": "follow-diff",
+    "description": "A free tool that generates a list of who doesn't follow back and who you don't follow back on Instagram.",
     "version": "0.1.0",
     "private": true,
     "scripts": {
