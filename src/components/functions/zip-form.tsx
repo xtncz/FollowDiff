@@ -28,6 +28,13 @@ function ZipForm({ children }: ZipFormProps) {
         const zipFile = zipInput.files[0];
         const zip = new JSZip();
 
+        if (!zipFile.name.endsWith(".zip") && !zipFile.name.startsWith("instagram-")) {
+            invalidZip.classList.remove("hidden");
+            invalidZip.style.display = "block";
+
+            return;
+        }
+
         try {
             const zipData = await zip.loadAsync(zipFile);
             const folderName = "connections/followers_and_following";
