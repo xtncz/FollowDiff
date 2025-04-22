@@ -34,21 +34,17 @@ const nextConfig: NextConfig = {
                         key: "Content-Security-Policy",
                         value: [
                             "default-src 'self'",
-                            process.env.NODE_ENV === "development" 
-                                ? "script-src 'self' 'unsafe-eval' 'unsafe-inline'" 
-                                : "script-src 'self'",
+                            "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
                             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-                            `img-src 'self' data: blob: ${baseUrl}`,
+                            "img-src 'self' data: blob: https:",
                             "font-src 'self' https://fonts.gstatic.com",
-                            `connect-src 'self' ${baseUrl} https://fonts.googleapis.com https://fonts.gstatic.com`,
+                            "connect-src 'self' https: wss:",
                             "form-action 'self'",
                             "frame-ancestors 'self'",
                             "base-uri 'self'",
                             "object-src 'none'",
-                            process.env.NODE_ENV === "production" 
-                                ? "upgrade-insecure-requests" 
-                                : ""
-                        ].filter(Boolean).join("; ")
+                            "upgrade-insecure-requests"
+                        ].join("; ")
                     }
                 ]
             }
