@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description:
         "A free tool that generates a list of who doesn't follow back and who you don't follow back on Instagram.",
     metadataBase: new URL("https://follow-diff.vercel.app/results"),
+    keywords: ["instagram", "followers", "follow", "following", "back", "compare", "difference", "diff", "list", "ig", "comparison", "comparer"]
 };
 
 const ResultsPage = () => {
