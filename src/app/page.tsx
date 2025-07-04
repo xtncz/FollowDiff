@@ -11,7 +11,16 @@ import {
 } from "@app/components/ui/dialog";
 import { ZipForm } from "@app/components/functions/zip-form";
 import { ExternalLink } from "@app/components/functions/external-link";
+import { Metadata } from "next";
+
 import Instagram from "@app/components/icons/instagram";
+
+export const metadata: Metadata = {
+    title: "FollowDiff",
+    description:
+        "A free tool that generates a list of who doesn't follow back and who you don't follow back on Instagram.",
+    metadataBase: new URL("https://follow-diff.vercel.app/"),
+};
 
 export default function Home() {
     return (
@@ -171,7 +180,10 @@ export default function Home() {
                     <ExternalLink url="https://github.com/xtncz" text="tncz" />
                 </span>
                 <span>|</span>
-                <span className="flex flex-row justify-center items-center gap-x-1">Contact me on <Instagram className="mt-0.5 h-5 w-5 hover:brightness-75 cursor-pointer" /></span>
+                <span className="flex flex-row justify-center items-center gap-x-1">
+                    Contact me on{" "}
+                    <Instagram className="mt-0.5 h-5 w-5 hover:brightness-75 cursor-pointer" />
+                </span>
             </div>
         </div>
     );

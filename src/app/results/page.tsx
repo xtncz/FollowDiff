@@ -12,6 +12,14 @@ import {
 } from "@app/components/ui/tabs"
 import { Separator } from "@app/components/ui/separator";
 import { ExternalLink } from "@app/components/functions/external-link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Results",
+    description:
+        "A free tool that generates a list of who doesn't follow back and who you don't follow back on Instagram.",
+    metadataBase: new URL("https://follow-diff.vercel.app/results"),
+};
 
 const ResultsPage = () => {
     const router = useRouter();
