@@ -196,7 +196,9 @@ export default function Home() {
                 <span>|</span>
                 <span className="flex flex-row justify-center items-center gap-x-1">
                     Contact me on{" "}
-                    <Instagram className="mt-0.5 h-5 w-5 hover:brightness-75 cursor-pointer" />
+                    <a href="https://instagram.com/bennn.kee" target="_blank" rel="noopener noreferrer">
+                        <Instagram className="mt-0.5 h-5 w-5 hover:brightness-75 cursor-pointer" />
+                    </a>
                 </span>
             </div>
         </div>
