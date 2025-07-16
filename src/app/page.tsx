@@ -191,7 +191,7 @@ export default function Home() {
             <div className="absolute bottom-5 text-xs flex flex-row justify-center items-center gap-x-2">
                 <span>
                     Made with 🧠 by{" "}
-                    <ExternalLink url="https://github.com/xtncz" text="tncz" />
+                    <ExternalLink url="https://github.com/6xtvo" text="tncz" />
                 </span>
                 <span>|</span>
                 <span className="flex flex-row justify-center items-center gap-x-1">
